@@ -2,35 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Register | AutoDrop Platform</title>
+  <title>Seller Registration - AutoDrop Platform</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body { background:#f6faff; font-family:Arial,sans-serif; }
-    .container { max-width:420px; margin:60px auto; background:#fff; border-radius:12px; box-shadow:0 2px 24px #0074e422; padding:34px 26px;}
-    h1 { color:#0074e4;}
-    label { display:block; margin:18px 0 5px 0; font-weight:600;}
-    input, select { width:100%; padding:11px 8px; margin-bottom:10px; border:1px solid #c0d6e4; border-radius:7px;}
-    button { background:#0074e4; color:#fff; border:none; border-radius:7px; font-size:1.05rem; padding:12px 0; width:100%; margin-top:10px;}
-    button:hover { background:#005bb5;}
+    body { background: #f7faff; font-family: Arial, sans-serif; margin: 0; }
+    .container { max-width: 480px; background: #fff; margin: 50px auto; padding: 35px 22px; border-radius: 14px; box-shadow: 0 0 20px #e3f1ff; }
+    h2 { color: #0073e6; margin-bottom: 12px; }
+    form { display: flex; flex-direction: column; }
+    label { margin: 10px 0 4px; color: #444; font-size: 15px; }
+    input, textarea { padding: 11px; border-radius: 7px; border: 1px solid #b8daff; margin-bottom: 13px; font-size: 16px; }
+    button { background: #0073e6; color: #fff; border: none; border-radius: 7px; padding: 13px; font-weight: bold; font-size: 16px; cursor: pointer; }
+    button:hover { background: #005bb5; }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Seller Registration</h1>
+    <h2>Register as Seller</h2>
     <form>
-      <label>Name</label>
-      <input type="text" placeholder="Your Name" required>
-      <label>Email</label>
-      <input type="email" placeholder="Your Email" required>
-      <label>Business Type</label>
-      <select>
-        <option>Small Business</option>
-        <option>Supplier</option>
-        <option>Individual</option>
-      </select>
-      <label>Product Type</label>
-      <input type="text" placeholder="What do you sell?" required>
-      <button type="submit" onclick="alert('Registration submitted!')">Register</button>
+      <label for="storeName">Store Name</label>
+      <input type="text" id="storeName" name="storeName" required>
+
+      <label for="fullName">Your Name</label>
+      <input type="text" id="fullName" name="fullName" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" name="phone" required>
+
+      <label for="description">Store Description</label>
+      <textarea id="description" name="description" rows="3" required></textarea>
+
+      <button type="submit">Submit Registration</button>
     </form>
   </div>
 </body>
