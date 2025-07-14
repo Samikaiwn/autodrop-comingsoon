@@ -1,91 +1,51 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>عن AutoDrop Platform</title>
+  <title>عن المنصة – AutoDrop Platform</title>
   <style>
-    body { font-family: Tahoma, Arial, sans-serif; background: linear-gradient(130deg, #f5faff 70%, #ecf0ff 100%); margin: 0; padding: 0; color: #222;}
-    header { background: #0038ff; color: white; padding: 35px 10px 20px 10px; text-align: center;}
-    .logo { width: 110px; height: 110px; border-radius: 50%; background: #fff; box-shadow: 0 4px 32px #0038ff40; margin: -60px auto 10px; display: flex; align-items: center; justify-content: center; }
-    .logo img { width: 85px; height: 85px; object-fit: contain;}
-    section { max-width: 700px; margin: 35px auto; background: #fff; border-radius: 20px; box-shadow: 0 2px 24px #002aff18; padding: 34px;}
-    h1 { color: #0038ff;}
-    .hero-img { width: 100%; max-width: 400px; border-radius: 16px; margin: 20px auto; display: block; box-shadow:0 3px 14px #002aff11;}
-    ul { margin: 18px 0 0 0; padding: 0 1.5em;}
-    li { margin-bottom:8px; }
-    .features { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; margin: 30px 0;}
-    .feature { flex: 1 0 220px; background: #f4f6ff; border-radius: 12px; padding: 16px 12px; box-shadow: 0 2px 8px #0038ff0a; text-align: center;}
-    .feature span { font-size: 2em; display: block; margin-bottom: 8px;}
-    .btn-main { background: #0038ff; color: #fff; padding: 13px 28px; border-radius: 25px; border:0; font-size: 1em; font-weight:bold; margin:15px 7px 0 7px; cursor:pointer; transition:.2s;}
-    .btn-main:hover {background:#002acc;}
-    .yt-video {margin:22px auto; display:flex; justify-content:center;}
-    @media (max-width:600px){
-      section {padding: 12px;}
-      .features {flex-direction:column;}
-      .feature {margin-bottom:10px;}
-      .logo {width:80px;height:80px;}
-      .logo img {width:62px;height:62px;}
-      .hero-img {max-width:95vw;}
-    }
+    body { font-family: Tahoma, Arial, sans-serif; background: linear-gradient(120deg, #f7faff 80%, #ecf0ff 100%); margin: 0; padding: 0; color: #222;}
+    nav { background:#0038ff; padding:12px 0; }
+    nav div { max-width:1050px; margin:0 auto; display:flex; justify-content:center; gap:17px; flex-wrap:wrap;}
+    nav a { color:#fff; text-decoration:none; font-weight: bold; }
+    nav a.active { text-decoration: underline;}
+    .box { max-width:600px;margin:60px auto 40px;background:#fff;border-radius:14px;box-shadow:0 2px 14px #0038ff18;padding:38px 18px;}
+    .box ul {text-align:right;margin:22px 0 0 0;direction:rtl;}
+    .box li {margin-bottom:9px;}
+    footer { background:#0038ff; color:#fff; padding:16px 0; margin-top:30px; text-align:center; font-size:15px;}
+    @media (max-width:600px){nav div {gap:10px;}.box{padding:16px 5px;}}
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <!-- شعار AI مُصمم - مثال: دائرة مع أيقونة Drop ذكية -->
-      <img src="https://cdn.midjourney.com/393fd1da-38c9-456f-94ce-1d3e92b8fa1d/0_0.png" alt="شعار AutoDrop" />
-    </div>
-    <h1>عن منصة AutoDrop Platform</h1>
-    <p>تسوّق ذكي عالمي – برعاية الذكاء الاصطناعي</p>
-  </header>
+<nav>
+  <div>
+    <a href="index.html">الرئيسية</a>
+    <a href="about.html" class="active">عن المنصة</a>
+    <a href="products.html">منتجاتنا</a>
+    <a href="faq.html">الأسئلة الشائعة</a>
+    <a href="contact.html">تواصل معنا</a>
+    <a href="terms.html">الشروط والأحكام</a>
+    <a href="privacy.html">سياسة الخصوصية</a>
+  </div>
+</nav>
 
-  <section>
-    <img src="https://images.unsplash.com/photo-1515169273894-b8df7f6ef7b2?auto=format&fit=crop&w=700&q=80" class="hero-img" alt="تسوق إلكتروني حديث" />
-    
-    <h2>من نحن؟</h2>
-    <p>
-      <b>AutoDrop Platform</b> منصة تسوّق إلكتروني تجمع لك منتجات عالمية موثوقة من كبرى المتاجر والموردين، وتدعم أصحاب المشاريع الصغيرة عبر الذكاء الاصطناعي، بدون أي عمولات خفية أو تعقيد.
-    </p>
+<div class="box">
+  <h1 style="color:#0038ff;">عن منصة AutoDrop Platform</h1>
+  <p>
+    منصة تسوّق إلكتروني تجمع منتجات عالمية موثوقة وتدعم أصحاب المشاريع الصغيرة عبر الذكاء الاصطناعي.<br>
+    هدفنا تقديم تسوّق آمن وسهل للجميع، بدون رسوم مخفية أو تعقيد.
+  </p>
+  <ul>
+    <li>✔️ شحن عالمي سريع من موردين موثوقين</li>
+    <li>✔️ دعم ذكاء اصطناعي في كل خدمة</li>
+    <li>✔️ أرباح البائع كاملة (عمولة 5% فقط عند البيع)</li>
+    <li>✔️ نصف أرباح المنصة تذهب للأعمال الخيرية</li>
+  </ul>
+</div>
 
-    <div class="features">
-      <div class="feature">
-        <span>🌍</span>
-        <b>شحن عالمي سريع</b><br> منتجات من موردين موثوقين حول العالم.
-      </div>
-      <div class="feature">
-        <span>🤖</span>
-        <b>دعم AI كامل</b><br> ذكاء اصطناعي يُسهّل البحث والتوصية.
-      </div>
-      <div class="feature">
-        <span>💰</span>
-        <b>بدون رسوم مسبقة</b><br> البائع يحصل على أرباحه كاملة.
-      </div>
-      <div class="feature">
-        <span>🛡️</span>
-        <b>حماية وضمان</b><br> نلتزم بموثوقية كل طلبية.
-      </div>
-    </div>
-    
-    <h2>شاهد الفيديو التعريفي 👇</h2>
-    <div class="yt-video">
-      <iframe width="350" height="197" src="https://www.youtube.com/embed/YrcvT8gHhSs" 
-        title="AutoDrop Platform Promo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-    
-    <ul>
-      <li>✅ لا رسوم مخفية (5% فقط عند البيع)</li>
-      <li>✅ حماية لكل العملاء والبائعين</li>
-      <li>✅ تحويل أرباح مباشر عبر PayPal/Stripe</li>
-      <li>✅ نصف الأرباح تذهب للأعمال الخيرية</li>
-    </ul>
-
-    <div style="margin:35px 0 0 0;">
-      <a class="btn-main" href="https://autodropplatform.shop" target="_blank">زيارة الموقع الرسمي</a>
-      <a class="btn-main" href="mailto:skwreckerservce@gmail.com">تواصل معنا</a>
-    </div>
-  </section>
-</body><footer style="background:#0038ff;color:#fff;padding:16px 0;margin-top:30px;text-align:center;font-size:15px;">
+<footer>
   جميع الحقوق محفوظة &copy; AutoDrop Platform 2025
 </footer>
+</body>
 </html>
