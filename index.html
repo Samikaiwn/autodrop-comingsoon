@@ -1,84 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>AutoDrop Platform - Smart Shopping</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body { background: #f0f8ff; color: #333; text-align: center; font-family: Arial, sans-serif; margin: 0; }
-        .header { background: #2186eb; color: #fff; padding: 30px 0 10px 0; }
-        .header h1 { font-size: 2.7rem; margin: 0; }
-        .header p { font-size: 1.1rem; margin-top: 6px; }
-        .header .subtitle { color: #ffe066; margin-top: 10px; font-size: 1.2rem; }
-        .container { display: flex; flex-wrap: wrap; justify-content: center; margin: 40px auto 0 auto; max-width: 900px; gap: 36px; }
-        .box {
-            background: #fff;
-            border-radius: 15px;
-            box-shadow: 0 6px 30px rgba(50,110,220,0.08);
-            padding: 30px 18px;
-            flex: 1 1 320px;
-            min-width: 280px;
-            max-width: 380px;
-            transition: box-shadow 0.2s, transform 0.2s;
-            cursor: pointer;
-            border: 2px solid #e8eef9;
-            text-decoration: none;
-            color: #1660c1;
-        }
-        .box:hover {
-            box-shadow: 0 12px 36px rgba(33,134,235,0.13);
-            transform: translateY(-5px) scale(1.025);
-            border-color: #2186eb;
-            background: #f4f9ff;
-            color: #1356a1;
-        }
-        .box h2 { margin-bottom: 8px; font-size: 1.3rem; color: #186ed4; }
-        .box p { font-size: 1.06rem; margin-bottom: 0; color: #222; }
-        .nav {
-            display: flex; justify-content: center; gap: 60px; margin-top: 40px;
-            font-size: 1.1rem;
-        }
-        .nav a {
-            color: #2186eb; text-decoration: none; font-weight: bold; border-bottom: 2px solid #2186eb00;
-            transition: border-bottom 0.2s, color 0.2s;
-        }
-        .nav a:hover {
-            border-bottom: 2px solid #2186eb; color: #0d3d70;
-        }
-        .langs {
-            position: absolute; right: 40px; top: 28px;
-        }
-        .langs button {
-            background: #fff; border: 1px solid #ccc; border-radius: 7px;
-            padding: 4px 16px; margin-left: 6px; cursor: pointer; font-weight: bold; color: #2186eb;
-        }
-        .langs button.active, .langs button:hover { background: #2186eb; color: #fff; }
-    </style>
+  <meta charset="UTF-8">
+  <title>AutoDrop Platform | Marketplace for Smart Shopping</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { background: #f0f8ff; margin: 0; font-family: Arial, sans-serif; }
+    header { background: linear-gradient(90deg, #0074e4, #34c9ef); color: #fff; padding: 40px 0 20px 0; text-align: center; }
+    .logo { font-size: 2.7rem; font-weight: bold; letter-spacing: 2px; }
+    .slogan { font-size: 1.1rem; margin: 8px 0 5px 0; }
+    .launch { font-size: 1.2rem; margin-bottom: 10px; color: #ffe066; }
+    nav { margin: 20px auto; display: flex; justify-content: center; gap: 25px; }
+    .nav-btn { background: #fff; color: #0074e4; border: 2px solid #0074e4; padding: 18px 28px; border-radius: 15px; font-size: 1.2rem; font-weight: 600; cursor: pointer; box-shadow: 0 2px 10px #0001; transition: all 0.18s; text-decoration: none; }
+    .nav-btn:hover { background: #0074e4; color: #fff; box-shadow: 0 4px 24px #0002; }
+    .section { max-width: 1100px; margin: 45px auto; display: flex; justify-content: space-around; gap: 28px; flex-wrap: wrap; }
+    .card { flex: 1 1 300px; background: #fff; border-radius: 22px; box-shadow: 0 6px 38px #0074e415; padding: 28px 24px 38px 24px; text-align: center; transition: box-shadow .2s; min-width: 310px; }
+    .card:hover { box-shadow: 0 10px 60px #0074e433; }
+    .card-title { color: #0074e4; font-size: 1.28rem; margin-bottom: 11px; }
+    .card-desc { font-size: 1.04rem; color: #222; margin-bottom: 18px; }
+    @media (max-width:900px){ .section {flex-direction: column;align-items: center;} .card{min-width:260px;}}
+  </style>
 </head>
 <body>
-    <div class="header">
-        <span style="font-size:1.7rem; margin-right:9px;">🚗</span>
-        <h1>AutoDrop Platform</h1>
-        <p>The Next Generation Marketplace for Smart Shopping</p>
-        <div class="subtitle">✨ Grand Launch Soon – Stay Tuned! ✨</div>
-        <div class="langs">
-            <button class="active">English</button>
-            <button>Arabic</button>
-        </div>
+  <header>
+    <div class="logo">🚗 AutoDrop Platform</div>
+    <div class="slogan">The Next Generation Marketplace for Smart Shopping</div>
+    <div class="launch">✨ Grand Launch Soon – Stay Tuned! ✨</div>
+    <nav>
+      <a href="marketplace.html" class="nav-btn">Marketplace</a>
+      <a href="small-business.html" class="nav-btn">Small Business Support</a>
+      <a href="public-ads.html" class="nav-btn">Public Ads</a>
+      <a href="ai-shopping.html" class="nav-btn">AI-powered Shopping</a>
+    </nav>
+  </header>
+
+  <div class="section">
+    <div class="card">
+      <div class="card-title">Marketplace</div>
+      <div class="card-desc">Explore thousands of products from trusted global suppliers. Shop safely and find the best deals.</div>
+      <a href="marketplace.html" class="nav-btn" style="font-size:1rem;">Go to Marketplace</a>
     </div>
-    <div class="container">
-        <a class="box" href="marketplace.html">
-            <h2>Marketplace</h2>
-            <p>Explore thousands of products from trusted global suppliers – all in one place. Find deals, compare, and shop securely.</p>
-        </a>
-        <a class="box" href="small-business.html">
-            <h2>Small Business Support</h2>
-            <p>Showcase your products for free. We support small business owners: zero listing fees, only 5% service per sale.</p>
-        </a>
+    <div class="card">
+      <div class="card-title">Small Business Support</div>
+      <div class="card-desc">Showcase your products for free. Only 5% service fee on successful sales. No listing fees.</div>
+      <a href="small-business.html" class="nav-btn" style="font-size:1rem;">Small Businesses</a>
     </div>
-    <div class="nav">
-        <a href="public-ads.html">Public Ads</a>
-        <a href="ai-shopping.html">AI-powered Shopping</a>
+    <div class="card">
+      <div class="card-title">Public Ads</div>
+      <div class="card-desc">Anyone can post ads for products or services. 100% free after admin approval.</div>
+      <a href="public-ads.html" class="nav-btn" style="font-size:1rem;">Browse Ads</a>
     </div>
+    <div class="card">
+      <div class="card-title">AI-powered Shopping</div>
+      <div class="card-desc">Smart search and recommendations powered by AI for a seamless buying experience.</div>
+      <a href="ai-shopping.html" class="nav-btn" style="font-size:1rem;">Try AI Shopping</a>
+    </div>
+  </div>
 </body>
 </html>
