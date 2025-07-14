@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>منتجاتنا – AutoDrop Platform</title>
+  <style>
+    body { font-family: Tahoma, Arial, sans-serif; background: linear-gradient(120deg, #f5faff 80%, #ecf0ff 100%); margin: 0; padding: 0; color: #222;}
+    header { background: #0038ff; color: white; padding: 30px 10px 18px 10px; text-align: center;}
+    section { max-width: 1050px; margin: 32px auto; background: #fff; border-radius: 18px; box-shadow: 0 2px 24px #0038ff12; padding: 30px;}
+    h1 { color: #0038ff;}
+    .products { display: flex; flex-wrap: wrap; gap: 28px; justify-content: center;}
+    .card { background: #f8faff; border-radius: 14px; box-shadow: 0 2px 12px #002aff14; width: 270px; padding: 16px; text-align: center;}
+    .card img { width: 95%; max-width:220px; height: 150px; object-fit: cover; border-radius: 12px; margin-bottom: 10px;}
+    .price { color: #0038ff; font-weight: bold; margin: 7px 0;}
+    .buy-btn { display:inline-block; margin-top:10px; padding:10px 20px; border-radius:18px; background:#0038ff; color:#fff; text-decoration:none; font-weight:bold; transition:0.2s;}
+    .buy-btn:hover { background:#002acc;}
+    @media (max-width:800px){
+      .products {flex-direction:column; align-items:center;}
+      .card {width:90%;}
+    }
+    @media (max-width:600px){
+      section {padding:8px;}
+      .card img {height:100px;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>منتجاتنا</h1>
+    <p>أفضل المنتجات العالمية مباشرة من الموردين – مع دعم وخدمة AutoDrop</p>
+  </header>
+
+  <section>
+    <div class="products">
+      <!-- منتج 1 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1512499617640-c2f999098c01?auto=format&fit=crop&w=400&q=80" alt="ساعة ذكية">
+        <h2>ساعة ذكية X Pro</h2>
+        <div class="price">299 ريال</div>
+        <a href="https://wa.me/966500000000?text=مرحباً، أريد طلب ساعة ذكية X Pro من AutoDrop" class="buy-btn" target="_blank">اطلب عبر واتساب</a>
+      </div>
+      <!-- منتج 2 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=400&q=80" alt="سماعة بلوتوث">
+        <h2>سماعة بلوتوث الأصلية</h2>
+        <div class="price">120 ريال</div>
+        <a href="https://wa.me/966500000000?text=مرحباً، أريد طلب سماعة بلوتوث من AutoDrop" class="buy-btn" target="_blank">اطلب عبر واتساب</a>
+      </div>
+      <!-- منتج 3 -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="باور بنك متنقل">
+        <h2>باور بنك متنقل</h2>
+        <div class="price">89 ريال</div>
+        <a href="https://wa.me/966500000000?text=مرحباً، أريد طلب باور بنك متنقل من AutoDrop" class="buy-btn" target="_blank">اطلب عبر واتساب</a>
+      </div>
+      <!-- أضف منتجات أخرى بنفس الشكل -->
+    </div>
+    <p style="margin-top:34px;">للطلب أو الاستفسار عن أي منتج، تواصل معنا مباشرة عبر الواتساب أو البريد الإلكتروني.</p>
+  </section>
+</body>
+</html>
