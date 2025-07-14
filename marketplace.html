@@ -3,32 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <title>Marketplace | AutoDrop Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body { background: #f7fbff; font-family: Arial,sans-serif; margin:0;}
-    .top { background: #178bfd; color: #fff; padding: 28px 0 18px 0; text-align: center; }
-    h1 { margin: 0 0 12px 0; }
-    .desc { margin: 0 auto 18px; font-size: 1.09rem; max-width: 600px;}
-    .back { position:absolute; left:25px; top:22px; background:#fff; color:#178bfd; border-radius:16px; padding:7px 22px; text-decoration:none; font-weight:600; box-shadow:0 2px 9px #178bfd11;}
-    .back:hover {background:#f7fbff;}
-    .section { max-width:950px; margin:36px auto; background:#fff; border-radius:14px; box-shadow:0 2px 15px #0001; padding:38px;}
-    .section h2 { color:#178bfd;}
+    body { background: #f4faff; margin: 0; font-family: Arial,sans-serif; }
+    header { background: #0074e4; color: #fff; padding: 30px 0 16px 0; text-align: center; }
+    .logo { font-size: 2rem; font-weight: bold; }
+    .back { position: absolute; left: 15px; top: 18px; }
+    .container { max-width: 1100px; margin: 40px auto; }
+    .h1 { font-size: 2rem; color: #0074e4; text-align: center; margin-bottom: 10px; }
+    .desc { color: #333; text-align: center; margin-bottom: 38px; }
+    .note { text-align:center; color:#888; font-size:.96rem; margin-bottom:24px; }
+    .prod-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 20px;}
+    .prod-card { background:#fff; border-radius:15px; box-shadow:0 2px 24px #0074e410; padding:22px 18px;text-align:center;}
+    .prod-card h3 {color:#0074e4; font-size:1.18rem;margin:12px 0 7px 0;}
+    .prod-card p {font-size:.99rem;color:#111;}
+    .prod-img {width:110px;height:110px;object-fit:contain; margin:0 auto 9px auto; display:block;}
+    a.nav-btn { background:#0074e4; color:#fff; padding:10px 18px; border-radius:10px; text-decoration:none; margin: 10px 0; display:inline-block;}
+    a.nav-btn:hover{background:#005bb5;}
   </style>
 </head>
 <body>
-  <a href="index.html" class="back">&larr; Home</a>
-  <div class="top">
-    <h1>Marketplace</h1>
-    <div class="desc">Discover and buy thousands of quality products from verified global suppliers in one secure platform. More categories and trusted sellers coming soon!</div>
-  </div>
-  <div class="section">
-    <h2>Featured Products</h2>
-    <ul>
-      <li>Electronics, gadgets, smart devices</li>
-      <li>Fashion, apparel, and accessories</li>
-      <li>Home & Kitchen essentials</li>
-      <li>Beauty, Health, and more...</li>
-    </ul>
-    <p><b>Coming soon:</b> Direct integration with global stores like Alibaba, AliExpress, and more!</p>
+  <header>
+    <a href="index.html" class="nav-btn back" style="background:#fff;color:#0074e4;">&#8592; Home</a>
+    <div class="logo">AutoDrop Platform</div>
+  </header>
+  <div class="container">
+    <div class="h1">Marketplace</div>
+    <div class="desc">Explore top products from reliable global suppliers. Shop with confidence!</div>
+    <div class="note">Demo products. Real supplier integration coming soon.</div>
+    <div class="prod-list">
+      <div class="prod-card">
+        <img class="prod-img" src="https://cdn-icons-png.flaticon.com/512/2830/2830287.png" alt="Smartphone">
+        <h3>Smartphone X1 Pro</h3>
+        <p>High performance, large display, unbeatable price. Ships worldwide.</p>
+      </div>
+      <div class="prod-card">
+        <img class="prod-img" src="https://cdn-icons-png.flaticon.com/512/107/107831.png" alt="Wireless Earbuds">
+        <h3>Wireless Earbuds</h3>
+        <p>Premium sound, long battery, stylish design. Limited stock.</p>
+      </div>
+      <div class="prod-card">
+        <img class="prod-img" src="https://cdn-icons-png.flaticon.com/512/2910/2910791.png" alt="Smart Watch">
+        <h3>Smart Watch</h3>
+        <p>Fitness tracking, notifications, water resistant.</p>
+      </div>
+      <div class="prod-card">
+        <img class="prod-img" src="https://cdn-icons-png.flaticon.com/512/809/809957.png" alt="Laptop">
+        <h3>Ultrabook Laptop</h3>
+        <p>Lightweight, powerful, business-ready. Hot deal!</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
