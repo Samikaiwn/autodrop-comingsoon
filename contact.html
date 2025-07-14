@@ -1,17 +1,42 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>تواصل معنا – AutoDrop Platform</title>
+  <style>
+    body { font-family: Tahoma, Arial, sans-serif; background: linear-gradient(120deg, #f7faff 80%, #ecf0ff 100%); margin: 0; padding: 0; color: #222;}
+    nav { background:#0038ff; padding:12px 0; }
+    nav div { max-width:1050px; margin:0 auto; display:flex; justify-content:center; gap:17px; flex-wrap:wrap;}
+    nav a { color:#fff; text-decoration:none; font-weight: bold; }
+    nav a.active { text-decoration: underline;}
+    .box { max-width:480px;margin:65px auto 40px;background:#fff;border-radius:14px;box-shadow:0 2px 14px #0038ff18;padding:38px 18px;text-align:center;}
+    .box a {color:#0038ff;}
+    footer { background:#0038ff; color:#fff; padding:16px 0; margin-top:30px; text-align:center; font-size:15px;}
+    @media (max-width:600px){nav div {gap:10px;}.box{padding:12px 4px;}}
+  </style>
 </head>
 <body>
-  <h1>تواصل معنا</h1>
-  <p>نحن هنا لخدمتك! راسلنا على الإيميل: skwreckerservce@gmail.com</p>
-  
-  <!-- ممكن تضيف نموذج أو طرق تواصل إضافية -->
+<nav>
+  <div>
+    <a href="index.html">الرئيسية</a>
+    <a href="about.html">عن المنصة</a>
+    <a href="products.html">منتجاتنا</a>
+    <a href="faq.html">الأسئلة الشائعة</a>
+    <a href="contact.html" class="active">تواصل معنا</a>
+    <a href="terms.html">الشروط والأحكام</a>
+    <a href="privacy.html">سياسة الخصوصية</a>
+  </div>
+</nav>
 
-  <footer style="background:#0038ff;color:#fff;padding:16px 0;margin-top:30px;text-align:center;font-size:15px;">
-    جميع الحقوق محفوظة &copy; AutoDrop Platform 2025
-  </footer>
+<div class="box">
+  <h1 style="color:#0038ff;">تواصل معنا</h1>
+  <p>راسلنا على الإيميل:<br> <a href="mailto:skwreckerservce@gmail.com">skwreckerservce@gmail.com</a></p>
+  <p>واتساب مباشر: <a href="https://wa.me/966500000000" target="_blank">اضغط هنا للدردشة</a></p>
+</div>
+
+<footer>
+  جميع الحقوق محفوظة &copy; AutoDrop Platform 2025
+</footer>
 </body>
 </html>
