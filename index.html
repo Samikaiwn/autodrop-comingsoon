@@ -1,17 +1,45 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <title>منتجاتنا – AutoDrop Platform</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>الرئيسية – AutoDrop Platform</title>
+  <style>
+    body { font-family: Tahoma, Arial, sans-serif; background: linear-gradient(120deg, #f7faff 80%, #ecf0ff 100%); margin: 0; padding: 0; color: #222;}
+    nav { background:#0038ff; padding:12px 0; }
+    nav div { max-width:1050px; margin:0 auto; display:flex; justify-content:center; gap:17px; flex-wrap:wrap;}
+    nav a { color:#fff; text-decoration:none; font-weight: bold; }
+    nav a.active { text-decoration: underline;}
+    .mainbox { text-align:center; margin:65px 0 40px;}
+    .mainbox img { width:120px; margin:18px auto 8px; display:block;}
+    footer { background:#0038ff; color:#fff; padding:16px 0; margin-top:30px; text-align:center; font-size:15px;}
+    @media (max-width:600px){
+      nav div {gap:10px;}
+      .mainbox {margin:35px 0 25px;}
+    }
+  </style>
 </head>
 <body>
-  <h1>منتجاتنا</h1>
-  <p>مجموعة مختارة من المنتجات العالمية مع شحن سريع ودعم كامل.</p>
-  
-  <!-- اعرض منتجاتك هنا -->
+<nav>
+  <div>
+    <a href="index.html" class="active">الرئيسية</a>
+    <a href="about.html">عن المنصة</a>
+    <a href="products.html">منتجاتنا</a>
+    <a href="faq.html">الأسئلة الشائعة</a>
+    <a href="contact.html">تواصل معنا</a>
+    <a href="terms.html">الشروط والأحكام</a>
+    <a href="privacy.html">سياسة الخصوصية</a>
+  </div>
+</nav>
 
-  <footer style="background:#0038ff;color:#fff;padding:16px 0;margin-top:30px;text-align:center;font-size:15px;">
-    جميع الحقوق محفوظة &copy; AutoDrop Platform 2025
-  </footer>
+<div class="mainbox">
+  <h1 style="color:#0038ff;">مرحبًا بك في AutoDrop Platform</h1>
+  <p style="font-size:1.2em;">منصة تسوّق ذكي تجمع المنتجات العالمية وتدعم البائعين الصغار بدون رسوم تسجيل!</p>
+  <img src="https://cdn.midjourney.com/393fd1da-38c9-456f-94ce-1d3e92b8fa1d/0_0.png" alt="شعار AutoDrop">
+</div>
+
+<footer>
+  جميع الحقوق محفوظة &copy; AutoDrop Platform 2025
+</footer>
 </body>
 </html>
