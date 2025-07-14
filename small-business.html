@@ -3,32 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <title>Small Business Support | AutoDrop Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body { background: #f7fbff; font-family: Arial,sans-serif; margin:0;}
-    .top { background: #178bfd; color: #fff; padding: 28px 0 18px 0; text-align: center; }
-    h1 { margin: 0 0 12px 0; }
-    .desc { margin: 0 auto 18px; font-size: 1.09rem; max-width: 600px;}
-    .back { position:absolute; left:25px; top:22px; background:#fff; color:#178bfd; border-radius:16px; padding:7px 22px; text-decoration:none; font-weight:600; box-shadow:0 2px 9px #178bfd11;}
-    .back:hover {background:#f7fbff;}
-    .section { max-width:950px; margin:36px auto; background:#fff; border-radius:14px; box-shadow:0 2px 15px #0001; padding:38px;}
-    .section h2 { color:#178bfd;}
+    body { background:#f8fcff; margin:0; font-family:Arial,sans-serif;}
+    header { background:#0074e4; color:#fff; text-align:center; padding:30px 0 20px 0;}
+    .logo { font-size:2rem; font-weight:bold;}
+    .back { position:absolute; left:15px; top:18px;}
+    .container { max-width:700px; margin:40px auto; background:#fff; border-radius:18px; box-shadow:0 4px 32px #0074e415; padding:36px 32px;}
+    h2 { color:#0074e4; margin-bottom:10px;}
+    .desc { font-size:1.07rem; color:#222; margin-bottom:20px;}
+    ul { margin:0 0 28px 19px;}
+    li { font-size:.99rem; margin-bottom:9px;}
+    .cta { text-align:center; margin-top:30px;}
+    .cta-btn { background:#0074e4; color:#fff; font-size:1.05rem; padding:13px 32px; border:none; border-radius:10px; cursor:pointer;}
+    .cta-btn:hover{background:#005bb5;}
+    a.nav-btn { background:#fff; color:#0074e4; padding:10px 18px; border-radius:10px; text-decoration:none; position:absolute; left:15px; top:18px;}
   </style>
 </head>
 <body>
-  <a href="index.html" class="back">&larr; Home</a>
-  <div class="top">
-    <h1>Small Business Support</h1>
-    <div class="desc">Showcase your products for free! Get discovered by more customers and only pay a 5% service fee per sale – no registration or listing fees.</div>
-  </div>
-  <div class="section">
-    <h2>Benefits for Sellers</h2>
+  <header>
+    <a href="index.html" class="nav-btn back">&#8592; Home</a>
+    <div class="logo">AutoDrop Platform</div>
+  </header>
+  <div class="container">
+    <h2>Small Business Support</h2>
+    <div class="desc">Showcase your products for free! We support small business owners. Zero listing fees, only 5% service per sale. Submit your products and join our growing network.</div>
     <ul>
-      <li>Free product listing – unlimited items</li>
-      <li>Zero registration fees, zero hidden costs</li>
-      <li>Direct payments to your PayPal or Stripe</li>
-      <li>Full control of your shop, easy management</li>
+      <li>No monthly or hidden fees.</li>
+      <li>Easy listing process — just fill out our simple form.</li>
+      <li>Your revenue is paid directly to your PayPal or Stripe account.</li>
+      <li>Our team reviews and approves every new product for quality and safety.</li>
     </ul>
-    <p><b>Apply now</b> to be among the first sellers at AutoDrop Platform!</p>
+    <div class="cta">
+      <button class="cta-btn" onclick="alert('Registration form coming soon!')">Apply Now</button>
+    </div>
   </div>
 </body>
 </html>
