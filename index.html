@@ -1,101 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>AutoDrop Platform | Marketplace for All</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body { margin:0; font-family: 'Segoe UI', Arial, sans-serif; background: #f4f6fb; color: #222; }
-    .header {
-      background: linear-gradient(90deg, #0055ff 0%, #13c2c2 100%);
-      color: #fff;
-      padding: 40px 0 30px 0;
-      text-align: center;
-      box-shadow: 0 4px 18px #0092cc22;
-    }
-    .logo {
-      font-size: 2.4em;
-      font-weight: bold;
-      letter-spacing: 2px;
-      margin-bottom: 10px;
-    }
-    .subtitle {
-      font-size: 1.3em;
-      margin-bottom: 12px;
-    }
-    .coming {
-      font-size: 1.1em;
-      color: #ffeb3b;
-    }
-    .sections {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 32px;
-      padding: 48px 8px 32px 8px;
-      max-width: 1050px;
-      margin: 0 auto;
-    }
-    .card {
-      background: #fff;
-      border-radius: 16px;
-      box-shadow: 0 2px 18px #d8d8ff30;
-      padding: 32px 24px;
-      width: 290px;
-      min-height: 220px;
-      text-align: center;
-      transition: transform 0.13s;
-      cursor: pointer;
-      border-bottom: 4px solid #13c2c2;
-    }
-    .card:hover { transform: translateY(-7px) scale(1.035);}
-    .card h3 { color: #0055ff; margin-bottom: 8px;}
-    .card p { color: #444; font-size: 1em;}
-    .footer {
-      text-align: center;
-      color: #888;
-      padding: 30px 0 18px 0;
-      font-size: 0.95em;
-      margin-top: 20px;
-    }
-    @media (max-width: 700px) {
-      .sections { flex-direction: column; align-items: center; gap: 20px; padding: 25px 5px;}
-      .card { width: 97vw; min-width: 0; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>AutoDrop Platform - Smart Shopping</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { background: #f0f8ff; color: #333; text-align: center; font-family: Arial, sans-serif; margin: 0; }
+        .header { background: #2186eb; color: #fff; padding: 30px 0 10px 0; }
+        .header h1 { font-size: 2.7rem; margin: 0; }
+        .header p { font-size: 1.1rem; margin-top: 6px; }
+        .header .subtitle { color: #ffe066; margin-top: 10px; font-size: 1.2rem; }
+        .container { display: flex; flex-wrap: wrap; justify-content: center; margin: 40px auto 0 auto; max-width: 900px; gap: 36px; }
+        .box {
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 30px rgba(50,110,220,0.08);
+            padding: 30px 18px;
+            flex: 1 1 320px;
+            min-width: 280px;
+            max-width: 380px;
+            transition: box-shadow 0.2s, transform 0.2s;
+            cursor: pointer;
+            border: 2px solid #e8eef9;
+            text-decoration: none;
+            color: #1660c1;
+        }
+        .box:hover {
+            box-shadow: 0 12px 36px rgba(33,134,235,0.13);
+            transform: translateY(-5px) scale(1.025);
+            border-color: #2186eb;
+            background: #f4f9ff;
+            color: #1356a1;
+        }
+        .box h2 { margin-bottom: 8px; font-size: 1.3rem; color: #186ed4; }
+        .box p { font-size: 1.06rem; margin-bottom: 0; color: #222; }
+        .nav {
+            display: flex; justify-content: center; gap: 60px; margin-top: 40px;
+            font-size: 1.1rem;
+        }
+        .nav a {
+            color: #2186eb; text-decoration: none; font-weight: bold; border-bottom: 2px solid #2186eb00;
+            transition: border-bottom 0.2s, color 0.2s;
+        }
+        .nav a:hover {
+            border-bottom: 2px solid #2186eb; color: #0d3d70;
+        }
+        .langs {
+            position: absolute; right: 40px; top: 28px;
+        }
+        .langs button {
+            background: #fff; border: 1px solid #ccc; border-radius: 7px;
+            padding: 4px 16px; margin-left: 6px; cursor: pointer; font-weight: bold; color: #2186eb;
+        }
+        .langs button.active, .langs button:hover { background: #2186eb; color: #fff; }
+    </style>
 </head>
 <body>
-  <div class="header">
-    <div class="logo">🚗 AutoDrop Platform</div>
-    <div class="subtitle">The Next Generation Marketplace for Smart Shopping</div>
-    <div class="coming">✨ Grand Launch Soon – Stay Tuned! ✨</div>
-  </div>
-
-  <div class="sections">
-    <div class="card">
-      <h3>Marketplace</h3>
-      <p>Explore thousands of products from trusted global suppliers – all in one place. Find deals, compare, and shop securely.</p>
+    <div class="header">
+        <span style="font-size:1.7rem; margin-right:9px;">🚗</span>
+        <h1>AutoDrop Platform</h1>
+        <p>The Next Generation Marketplace for Smart Shopping</p>
+        <div class="subtitle">✨ Grand Launch Soon – Stay Tuned! ✨</div>
+        <div class="langs">
+            <button class="active">English</button>
+            <button>Arabic</button>
+        </div>
     </div>
-    <div class="card">
-      <h3>Small Business Support</h3>
-      <p>Showcase your products for free. We support small business owners: zero listing fees, only 5% service per sale.</p>
+    <div class="container">
+        <a class="box" href="marketplace.html">
+            <h2>Marketplace</h2>
+            <p>Explore thousands of products from trusted global suppliers – all in one place. Find deals, compare, and shop securely.</p>
+        </a>
+        <a class="box" href="small-business.html">
+            <h2>Small Business Support</h2>
+            <p>Showcase your products for free. We support small business owners: zero listing fees, only 5% service per sale.</p>
+        </a>
     </div>
-    <div class="card">
-      <h3>Public Ads</h3>
-      <p>Anyone can post ads for products or services. Free, simple, and visible to everyone. Admin approval required for quality.</p>
+    <div class="nav">
+        <a href="public-ads.html">Public Ads</a>
+        <a href="ai-shopping.html">AI-powered Shopping</a>
     </div>
-    <div class="card">
-      <h3>AI-powered Shopping</h3>
-      <p>Personalized recommendations, advanced search, and instant support with our AI assistant – your smart shopping partner.</p>
-    </div>
-    <div class="card">
-      <h3>24/7 Customer Care</h3>
-      <p>Real-time help and fast response for all your orders and inquiries. Your satisfaction is our #1 priority.</p>
-    </div>
-  </div>
-
-  <div class="footer">
-    &copy; 2024 AutoDrop Platform. All rights reserved.
-  </div>
 </body>
 </html>
