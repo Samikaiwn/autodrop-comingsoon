@@ -5,20 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>منتجاتنا – AutoDrop Platform</title>
   <style>
-    body { font-family: Tahoma, Arial, sans-serif; background: linear-gradient(120deg, #f5faff 80%, #ecf0ff 100%); margin: 0; padding: 0; color: #222;}
+    body { font-family: Tahoma, Arial, sans-serif; background: #f5faff; margin: 0; padding: 0; color: #222;}
     nav { background:#0038ff; padding:12px 0; }
     nav div { max-width:1050px; margin:0 auto; display:flex; justify-content:center; gap:17px; flex-wrap:wrap;}
     nav a { color:#fff; text-decoration:none; font-weight: bold; }
     nav a.active { text-decoration: underline;}
-    .products { display:flex;gap:24px;flex-wrap:wrap;justify-content:center;}
-    .card { background:#f8faff; border-radius:13px; padding:15px; width:230px; text-align:center; margin-bottom:20px;}
-    .card img { width:90%; border-radius:12px;}
-    .card .title {margin:8px 0 6px;font-weight:bold;}
-    .card .price {color:#0038ff;}
-    .buy-btn {display:inline-block;margin-top:7px;padding:8px 16px;background:#0038ff;color:#fff;border-radius:14px;text-decoration:none;font-weight:bold;}
+    .products { display:flex;gap:24px;flex-wrap:wrap;justify-content:center;margin:32px 0;}
+    .card { background:#fff; border-radius:13px; padding:18px; width:240px; text-align:center; margin-bottom:20px; box-shadow:0 2px 14px #0038ff18;}
+    .card img { width:90%; border-radius:12px; height:130px; object-fit:cover;}
+    .card .title {margin:12px 0 7px;font-weight:bold;font-size:1.08em;}
+    .card .price {color:#0038ff;font-size:1.05em;}
+    .buy-btn {display:inline-block;margin-top:8px;padding:8px 16px;background:#0038ff;color:#fff;border-radius:14px;text-decoration:none;font-weight:bold;}
+    .desc {font-size:0.97em;margin-top:9px; color:#222;}
     footer { background:#0038ff; color:#fff; padding:16px 0; margin-top:30px; text-align:center; font-size:15px;}
     @media (max-width:800px){.products{flex-direction:column;align-items:center;}.card{width:90%;}}
-    @media (max-width:600px){nav div{gap:10px;}.card img{height:100px;}}
+    @media (max-width:600px){nav div{gap:10px;}.card img{height:85px;}}
   </style>
 </head>
 <body>
@@ -34,32 +35,57 @@
   </div>
 </nav>
 
-<div style="max-width:1000px;margin:60px auto 30px;background:#fff;border-radius:14px;box-shadow:0 2px 14px #0038ff18;padding:35px;">
+<div style="max-width:1100px;margin:20px auto 30px;">
   <h1 style="color:#0038ff;text-align:center;">منتجاتنا</h1>
-  <div class="products">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1512499617640-c2f999098c01?auto=format&fit=crop&w=400&q=80" alt="ساعة ذكية X Pro">
-      <div class="title">ساعة ذكية X Pro</div>
-      <div class="price">299 ريال</div>
-      <a href="https://wa.me/966500000000?text=مرحباً، أريد طلب ساعة ذكية X Pro من AutoDrop" class="buy-btn" target="_blank">اطلب عبر واتساب</a>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=400&q=80" alt="سماعة بلوتوث">
-      <div class="title">سماعة بلوتوث الأصلية</div>
-      <div class="price">120 ريال</div>
-      <a href="https://wa.me/966500000000?text=مرحباً، أريد طلب سماعة بلوتوث من AutoDrop" class="buy-btn" target="_blank">اطلب عبر واتساب</a>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="باور بنك متنقل">
-      <div class="title">باور بنك متنقل</div>
-      <div class="price">89 ريال</div>
-      <a href="https://wa.me/966500000000?text=مرحباً، أريد طلب باور بنك متنقل من AutoDrop" class="buy-btn" target="_blank">اطلب عبر واتساب</a>
-    </div>
-  </div>
+  <div class="products" id="products"></div>
 </div>
 
 <footer>
   جميع الحقوق محفوظة &copy; AutoDrop Platform 2025
 </footer>
+
+<script>
+// بيانات المنتجات مع الأسعار بالدولار
+const products = [
+  {
+    "img": "https://s.alicdn.com/@sc04/kf/H5b9b0c8f6fd74e80a6f4bb415e73359bf.jpg_300x300.jpg",
+    "title": "سماعة بلوتوث ذكية",
+    "price": "$18",
+    "link": "https://wa.me/966500000000?text=أريد طلب سماعة بلوتوث ذكية من AutoDrop",
+    "desc": "سماعة عالية الجودة تدعم جميع الأجهزة الذكية. شحن سريع وصوت نقي."
+  },
+  {
+    "img": "https://s.alicdn.com/@sc04/kf/Hfbda3ef95a5245a9b6b5cf8ad3a1e6d3e.jpg_300x300.jpg",
+    "title": "باور بنك بسعة 20000mAh",
+    "price": "$29",
+    "link": "https://wa.me/966500000000?text=أريد طلب باور بنك 20000 من AutoDrop",
+    "desc": "شحن سريع ومتين لجميع الأجهزة، تصميم أنيق وعصري."
+  },
+  {
+    "img": "https://s.alicdn.com/@sc04/kf/Hd5e8fb5ea2ca4c1fbaeba8af6b7e1aabx.jpg_300x300.jpg",
+    "title": "ساعة ذكية مقاومة للماء",
+    "price": "$32",
+    "link": "https://wa.me/966500000000?text=أريد طلب ساعة ذكية مقاومة للماء من AutoDrop",
+    "desc": "شاشة لمس ملونة، تدعم البلوتوث، متابعة نبضات القلب والنوم."
+  }
+];
+
+function renderProducts() {
+  let html = "";
+  products.forEach(prod => {
+    html += `
+      <div class="card">
+        <img src="${prod.img}" alt="${prod.title}">
+        <div class="title">${prod.title}</div>
+        <div class="price">${prod.price}</div>
+        <a href="${prod.link}" class="buy-btn" target="_blank">اطلب عبر واتساب</a>
+        <div class="desc">${prod.desc}</div>
+      </div>
+    `;
+  });
+  document.getElementById("products").innerHTML = html;
+}
+renderProducts();
+</script>
 </body>
 </html>
