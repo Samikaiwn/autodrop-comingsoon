@@ -2,22 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>AutoDrop Platform - Coming Soon</title>
+  <title>AutoDrop Platform | Marketplace for All</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body { background: #f8f8f8; color: #333; text-align: center; font-family: Arial, sans-serif; margin-top: 120px; }
-    h1 { color: #0066ff; }
-    .box { background: #fff; border-radius: 14px; padding: 40px 20px; margin: auto; display: inline-block; box-shadow: 0 2px 20px #ddd; }
-    p { font-size: 20px; margin-top: 14px; }
-    .logo { width: 100px; margin-bottom: 18px; }
+    body { margin:0; font-family: 'Segoe UI', Arial, sans-serif; background: #f4f6fb; color: #222; }
+    .header {
+      background: linear-gradient(90deg, #0055ff 0%, #13c2c2 100%);
+      color: #fff;
+      padding: 40px 0 30px 0;
+      text-align: center;
+      box-shadow: 0 4px 18px #0092cc22;
+    }
+    .logo {
+      font-size: 2.4em;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      font-size: 1.3em;
+      margin-bottom: 12px;
+    }
+    .coming {
+      font-size: 1.1em;
+      color: #ffeb3b;
+    }
+    .sections {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 32px;
+      padding: 48px 8px 32px 8px;
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 18px #d8d8ff30;
+      padding: 32px 24px;
+      width: 290px;
+      min-height: 220px;
+      text-align: center;
+      transition: transform 0.13s;
+      cursor: pointer;
+      border-bottom: 4px solid #13c2c2;
+    }
+    .card:hover { transform: translateY(-7px) scale(1.035);}
+    .card h3 { color: #0055ff; margin-bottom: 8px;}
+    .card p { color: #444; font-size: 1em;}
+    .footer {
+      text-align: center;
+      color: #888;
+      padding: 30px 0 18px 0;
+      font-size: 0.95em;
+      margin-top: 20px;
+    }
+    @media (max-width: 700px) {
+      .sections { flex-direction: column; align-items: center; gap: 20px; padding: 25px 5px;}
+      .card { width: 97vw; min-width: 0; }
+    }
   </style>
 </head>
 <body>
-  <div class="box">
-    <img class="logo" src="https://autodropplatform.shop/logo.png" alt="AutoDrop Logo" onerror="this.style.display='none'">
-    <h1>AutoDrop Platform</h1>
-    <p>Our Marketplace is launching soon!</p>
-    <p>Stay tuned for a new era of AI-powered shopping.</p>
+  <div class="header">
+    <div class="logo">🚗 AutoDrop Platform</div>
+    <div class="subtitle">The Next Generation Marketplace for Smart Shopping</div>
+    <div class="coming">✨ Grand Launch Soon – Stay Tuned! ✨</div>
+  </div>
+
+  <div class="sections">
+    <div class="card">
+      <h3>Marketplace</h3>
+      <p>Explore thousands of products from trusted global suppliers – all in one place. Find deals, compare, and shop securely.</p>
+    </div>
+    <div class="card">
+      <h3>Small Business Support</h3>
+      <p>Showcase your products for free. We support small business owners: zero listing fees, only 5% service per sale.</p>
+    </div>
+    <div class="card">
+      <h3>Public Ads</h3>
+      <p>Anyone can post ads for products or services. Free, simple, and visible to everyone. Admin approval required for quality.</p>
+    </div>
+    <div class="card">
+      <h3>AI-powered Shopping</h3>
+      <p>Personalized recommendations, advanced search, and instant support with our AI assistant – your smart shopping partner.</p>
+    </div>
+    <div class="card">
+      <h3>24/7 Customer Care</h3>
+      <p>Real-time help and fast response for all your orders and inquiries. Your satisfaction is our #1 priority.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2024 AutoDrop Platform. All rights reserved.
   </div>
 </body>
 </html>
