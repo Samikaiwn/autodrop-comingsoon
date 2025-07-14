@@ -3,31 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <title>Public Ads | AutoDrop Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body { background: #f7fbff; font-family: Arial,sans-serif; margin:0;}
-    .top { background: #178bfd; color: #fff; padding: 28px 0 18px 0; text-align: center; }
-    h1 { margin: 0 0 12px 0; }
-    .desc { margin: 0 auto 18px; font-size: 1.09rem; max-width: 600px;}
-    .back { position:absolute; left:25px; top:22px; background:#fff; color:#178bfd; border-radius:16px; padding:7px 22px; text-decoration:none; font-weight:600; box-shadow:0 2px 9px #178bfd11;}
-    .back:hover {background:#f7fbff;}
-    .section { max-width:950px; margin:36px auto; background:#fff; border-radius:14px; box-shadow:0 2px 15px #0001; padding:38px;}
-    .section h2 { color:#178bfd;}
+    body { background:#f8fcff; margin:0; font-family:Arial,sans-serif;}
+    header { background:#0074e4; color:#fff; text-align:center; padding:30px 0 20px 0;}
+    .logo { font-size:2rem; font-weight:bold;}
+    .back { position:absolute; left:15px; top:18px;}
+    .container { max-width:850px; margin:40px auto; background:#fff; border-radius:18px; box-shadow:0 4px 32px #0074e415; padding:36px 32px;}
+    h2 { color:#0074e4; margin-bottom:10px;}
+    .desc { font-size:1.07rem; color:#222; margin-bottom:22px;}
+    .ads-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:22px;}
+    .ad { background:#f5faff; border-radius:12px; padding:18px 15px; box-shadow:0 2px 18px #0074e410;}
+    .ad-title { color:#0074e4; font-weight:bold; margin-bottom:7px;}
+    .ad-desc { font-size:.98rem; color:#222;}
+    .note { color:#888; margin-bottom:24px; text-align:center; }
+    a.nav-btn { background:#fff; color:#0074e4; padding:10px 18px; border-radius:10px; text-decoration:none; position:absolute; left:15px; top:18px;}
   </style>
 </head>
 <body>
-  <a href="index.html" class="back">&larr; Home</a>
-  <div class="top">
-    <h1>Public Ads</h1>
-    <div class="desc">Browse, post, and discover local ads for products and services. All posts are reviewed by the admin for maximum safety and trust.</div>
-  </div>
-  <div class="section">
-    <h2>How It Works</h2>
-    <ul>
-      <li>Anyone can post an ad for free</li>
-      <li>Ads reviewed before publishing</li>
-      <li>Products, services, offers, and more!</li>
-    </ul>
-    <p><b>Join our community ads board and reach more people for free!</b></p>
+  <header>
+    <a href="index.html" class="nav-btn back">&#8592; Home</a>
+    <div class="logo">AutoDrop Platform</div>
+  </header>
+  <div class="container">
+    <h2>Public Marketplace Ads</h2>
+    <div class="desc">Anyone can post ads for products or services. All ads must be approved by our admin team.</div>
+    <div class="note">Demo data — real ad posting coming soon.</div>
+    <div class="ads-list">
+      <div class="ad">
+        <div class="ad-title">Car for Sale</div>
+        <div class="ad-desc">2018 Toyota Camry, excellent condition, single owner. Contact: 555-5555</div>
+      </div>
+      <div class="ad">
+        <div class="ad-title">Mobile Phone Repair</div>
+        <div class="ad-desc">Fast, affordable, professional phone repair. Downtown office. Call: 555-1111</div>
+      </div>
+      <div class="ad">
+        <div class="ad-title">Laptop for Sale</div>
+        <div class="ad-desc">New Dell i7 laptop, 16GB RAM, 512GB SSD. Great for work and school.</div>
+      </div>
+      <div class="ad">
+        <div class="ad-title">Local Delivery Service</div>
+        <div class="ad-desc">Need items delivered? Call Sam Delivery: 555-9999</div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
