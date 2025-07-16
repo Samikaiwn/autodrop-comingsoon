@@ -1,0 +1,15 @@
+body { font-family: 'Tajawal', Arial, sans-serif; direction: rtl; margin: 0; padding: 0; background: #f9f9f9;}
+header { background: #242b47; color: #fff; padding: 15px 0; text-align: center;}
+nav a { color: #fff; text-decoration: none; margin: 0 10px;}
+nav a:hover { text-decoration: underline;}
+main { max-width: 900px; margin: 30px auto; background: #fff; padding: 20px; border-radius: 8px;}
+h1, h2, h3 { color: #242b47;}
+.product { border: 1px solid #eee; padding: 10px; margin: 10px 0; border-radius: 5px; background: #f7f7ff;}
+.product img { max-width: 150px; display: block; margin-bottom: 10px;}
+.price { color: #e74c3c; font-weight: bold;}
+.btn { display: inline-block; padding: 8px 16px; background: #4460df; color: #fff; border-radius: 5px; text-decoration: none;}
+.btn:hover { background: #2939a8;}
+footer { background: #242b47; color: #fff; text-align: center; padding: 12px 0; margin-top: 20px;}
+form input, form textarea { width: 90%; padding: 8px; margin: 8px 0; border: 1px solid #ccc; border-radius: 4px;}
+form button { background: #4460df; color: #fff; border: none; padding: 10px 20px; border-radius: 5px;}
+form button:hover { background: #2939a8;}
