@@ -1,46 +1,98 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>الرئيسية – AutoDrop Platform</title>
-  <!-- أكواد meta التعريفية والظهور في جوجل والسوشيال ميديا -->
-  <meta name="description" content="AutoDrop Platform – منصة تسوق إلكترونية عالمية تقدم منتجات متنوعة من أفضل الموردين حول العالم. توصيل دولي سريع ودعم فوري.">
-  <meta name="keywords" content="AutoDrop, autodropplatform, متجر الكتروني, تسوق عالمي, منتجات دولية, توصيل دولي, متجر للجميع">
-  <meta name="author" content="AutoDrop Platform Team">
-  <meta property="og:title" content="AutoDrop Platform – منصة تسوق عالمية">
-  <meta property="og:description" content="منصة إلكترونية تتيح لك التسوق من جميع أنحاء العالم وشحن دولي سريع. اكتشف أفضل المنتجات والعروض الآن.">
-  <meta property="og:image" content="https://api.iconify.design/material-symbols/local-shipping-outline.svg?color=%230038ff&width=120">
-  <meta property="og:url" content="https://www.autodropplatform.shop">
-  <meta name="robots" content="index,follow">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>منصة AutoDrop Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="متجر إلكتروني عالمي للدروبشيبينج ودعم المشاريع الصغيرة.">
+  <link rel="stylesheet" href="style.css">
   <style>
-    body { font-family: Tahoma, Arial, sans-serif; background: #f7faff; margin: 0; padding: 0; color: #222;}
-    .center { text-align: center; margin-top: 70px; }
-    .main-title { color: #0038ff; font-size: 2em; }
-    .desc { margin-top: 25px; font-size: 1.3em; }
-    .logo-box { margin-top: 32px;}
-    .logo-box img { width: 110px; display: block; margin: 0 auto 8px;}
-    .logo-name { color:#0038ff; font-size:1.18em;font-weight:bold;letter-spacing:1px;margin-top:3px;}
-    footer { background: #0038ff; color: #fff; padding:16px 0; margin-top:55px; text-align:center; font-size:15px;}
-    @media (max-width:600px){.main-title{font-size:1.2em;}.desc{font-size:1em;}.logo-box img{width:75px;}}
+    body { font-family: 'Tajawal', Arial, sans-serif; direction: rtl; margin: 0; padding: 0; background: #f9f9f9;}
+    header { background: #242b47; color: #fff; padding: 15px 0; text-align: center;}
+    nav a { color: #fff; text-decoration: none; margin: 0 10px;}
+    nav a:hover { text-decoration: underline;}
+    main { max-width: 900px; margin: 30px auto; background: #fff; padding: 20px; border-radius: 8px;}
+    h1, h2, h3 { color: #242b47;}
+    .ayah { font-size: 1.4em; margin: 18px 0 7px 0; color: #4460df; font-weight: bold;}
+    .ayah-en { font-size: 1.1em; color: #666; margin-bottom: 15px; }
+    .welcome-messages { margin: 30px 0; text-align: center; }
+    .welcome-text { 
+      display: inline-block; 
+      font-size: 1.3em; 
+      padding: 10px 20px; 
+      background: #e5eaf7;
+      color: #242b47; 
+      border-radius: 7px; 
+      min-height: 38px;
+      animation: fadein 2s infinite alternate;
+    }
+    @keyframes fadein {
+      0%   { opacity: 0.3;}
+      100% { opacity: 1;}
+    }
+    footer { background: #242b47; color: #fff; text-align: center; padding: 17px 0; margin-top: 30px;}
+    .copyright { margin-top: 10px; font-size: 1.1em; color: #dadada;}
+    .global { color: #3ac; font-weight: bold;}
   </style>
 </head>
 <body>
-  <div class="center">
-    <div class="logo-box">
-      <img src="https://api.iconify.design/material-symbols/local-shipping-outline.svg?color=%230038ff&width=110" alt="AutoDrop Logo">
-      <div class="logo-name">AutoDrop Platform</div>
+  <header>
+    <h1>مرحبًا بك في AutoDrop Platform</h1>
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="products.html">المنتجات</a>
+      <a href="about.html">من نحن</a>
+      <a href="contact.html">تواصل معنا</a>
+    </nav>
+  </header>
+  <main>
+    <!-- عبارة قرآنية -->
+    <div class="ayah">هَذَا مِن فَضْلِ رَبِّي</div>
+    <div class="ayah-en">This is by the Grace of my Lord</div>
+
+    <!-- رسائل ترحيبية متحركة -->
+    <div class="welcome-messages">
+      <span class="welcome-text" id="welcome"></span>
     </div>
-    <h1 class="main-title">مرحبًا بك في AutoDrop Platform</h1>
-    <p class="desc">
-      منصة تسوق إلكترونية عالمية<br>
-      نقدم منتجات متنوعة من أفضل الموردين حول العالم.<br>
-      توصيل دولي سريع، دعم فوري، وطرق دفع آمنة تناسب الجميع.<br>
-      <span style="color:#0038ff;">العالم بين يديك!</span>
-    </p>
-  </div>
+
+    <section>
+      <h2>أفضل المنتجات من موردين عالميين</h2>
+      <p>منصة أوتودروب تجمع لك المنتجات الموثوقة من علي إكسبرس وعلي بابا مباشرة!</p>
+      <a href="products.html" class="btn">تصفح المنتجات</a>
+    </section>
+    <section>
+      <h3>لماذا AutoDrop Platform؟</h3>
+      <ul>
+        <li>دعم مشاريع صغيرة</li>
+        <li>شحن دولي سريع</li>
+        <li>دفع آمن 100%</li>
+        <li>خدمة عملاء بالذكاء الاصطناعي</li>
+      </ul>
+    </section>
+  </main>
   <footer>
-    جميع الحقوق محفوظة &copy; AutoDrop Platform 2025 – متجر عالمي يخدم جميع العملاء في كل الدول 🌍
+    &copy; 2025 منصة AutoDrop Platform – جميع الحقوق محفوظة.
+    <div class="copyright">
+      جميع الحقوق محفوظة &copy; لموقع AutoDrop Platform.<br>
+      <span class="global">المتجر عالمي ويخدم جميع الدول العربية والأجنبية.</span>
+    </div>
   </footer>
+  <script>
+    // رسائل ترحيبية متحركة
+    const messages = [
+      "أهلاً وسهلاً بك في عالم التسوق الذكي!",
+      "تسوق بثقة وأمان من أفضل الموردين.",
+      "نخدمك أينما كنت حول العالم.",
+      "استمتع بعروضنا الحصرية وخدماتنا الذكية.",
+      "منصة AutoDrop Platform تدعم نجاح مشاريعك!"
+    ];
+    let msgIndex = 0;
+    function rotateMessages() {
+      document.getElementById('welcome').textContent = messages[msgIndex];
+      msgIndex = (msgIndex + 1) % messages.length;
+      setTimeout(rotateMessages, 2600);
+    }
+    rotateMessages();
+  </script>
 </body>
 </html>
