@@ -1,0 +1,63 @@
+<!-- Chatbot Start -->
+<style>
+#chatbot-container {
+  position: fixed; bottom: 30px; left: 30px; z-index: 9999;
+  width: 340px; max-width: 95vw; background: #fff; border-radius: 12px;
+  box-shadow: 0 3px 24px #0003; border: 2px solid #246eb7; display: none;
+  flex-direction: column; }
+#chatbot-header { background: #246eb7; color: #fff; padding: 10px 15px; border-radius: 12px 12px 0 0; font-size: 1.1em;}
+#chatbot-messages { height: 230px; overflow-y: auto; padding: 12px; background: #f7f8fa; font-size: 0.98em;}
+#chatbot-input-row { display: flex; border-top: 1px solid #eee; }
+#chatbot-input { flex: 1; padding: 9px; border: none; border-radius: 0 0 0 12px; outline: none;}
+#chatbot-send { background: #246eb7; color: #fff; border: none; border-radius: 0 0 12px 0; padding: 9px 18px; cursor: pointer;}
+#chatbot-btn { position: fixed; left: 30px; bottom: 30px; background: #246eb7; color: #fff; border: none; border-radius: 50%; width: 60px; height: 60px; font-size: 2em; cursor: pointer; box-shadow: 0 3px 24px #0002;}
+#chatbot-btn:hover { background: #009997;}
+</style>
+<button id="chatbot-btn" onclick="toggleBot()">💬</button>
+<div id="chatbot-container">
+  <div id="chatbot-header">روبوت خدمة العملاء</div>
+  <div id="chatbot-messages"></div>
+  <div id="chatbot-input-row">
+    <input id="chatbot-input" type="text" placeholder="اكتب سؤالك هنا...">
+    <button id="chatbot-send" onclick="sendMessage()">إرسال</button>
+  </div>
+</div>
+<script>
+let chatbotOpen = false;
+function toggleBot() {
+  chatbotOpen = !chatbotOpen;
+  document.getElementById('chatbot-container').style.display = chatbotOpen ? 'flex' : 'none';
+}
+function sendMessage() {
+  const input = document.getElementById('chatbot-input');
+  const msg = input.value.trim();
+  if (!msg) return;
+  addMessage("أنت", msg, "right");
+  input.value = "";
+  setTimeout(() => reply(msg), 700);
+}
+function addMessage(sender, text, align="left") {
+  const box = document.getElementById('chatbot-messages');
+  const msgDiv = document.createElement('div');
+  msgDiv.style.textAlign = align;
+  msgDiv.innerHTML = `<b>${sender}:</b> ${text}`;
+  box.appendChild(msgDiv);
+  box.scrollTop = box.scrollHeight;
+}
+function reply(q) {
+  let answer = "";
+  q = q.toLowerCase();
+  if (q.includes("سعر") || q.includes("price")) answer = "للحصول على سعر المنتج، اختر المنتج وسيظهر السعر بوضوح.";
+  else if (q.includes("دعم") || q.includes("support")) answer = "فريق الدعم جاهز لخدمتك 24/7! فقط اكتب سؤالك هنا.";
+  else if (q.includes("دفع") || q.includes("pay")) answer = "ندعم عدة طرق دفع: PayPal، بطاقات بنكية، وغيرها.";
+  else if (q.includes("شحن") || q.includes("shipping")) answer = "الشحن دولي وسريع لجميع الدول العربية والعالمية.";
+  else if (q.includes("hello") || q.includes("hi") || q.includes("مرحبا")) answer = "مرحبًا بك! كيف أقدر أخدمك اليوم؟";
+  else if (q.includes("منتج") || q.includes("product")) answer = "لدينا منتجات متنوعة. يمكنك تصفح جميع المنتجات من صفحة المنتجات.";
+  else answer = "شكراً لتواصلك! سيتم الرد عليك قريباً من فريقنا إذا لم تجد الإجابة هنا.";
+  addMessage("روبوت", answer, "left");
+}
+document.getElementById('chatbot-input').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') sendMessage();
+});
+</script>
+<!-- Chatbot End -->
