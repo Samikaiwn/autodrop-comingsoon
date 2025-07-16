@@ -1,29 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <title>AI-powered Shopping | AutoDrop Platform</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>التسوق الذكي بالذكاء الاصطناعي | AutoDrop Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="تسوق بسهولة مع مساعد التسوق الذكي من AutoDrop Platform. اكتشف منتجات موصى بها خصيصًا لك!">
+  <link rel="stylesheet" href="style.css">
   <style>
-    body { background:#f9faff; margin:0; font-family:Arial,sans-serif;}
-    header { background:#0074e4; color:#fff; text-align:center; padding:30px 0 20px 0;}
-    .logo { font-size:2rem; font-weight:bold;}
-    .back { position:absolute; left:15px; top:18px;}
-    .container { max-width:700px; margin:40px auto; background:#fff; border-radius:18px; box-shadow:0 4px 32px #0074e415; padding:36px 32px;}
-    h2 { color:#0074e4; margin-bottom:10px;}
-    .desc { font-size:1.07rem; color:#222; margin-bottom:20px;}
-    .ai-demo { background:#f8fcff; border-radius:12px; padding:22px; text-align:center; box-shadow:0 2px 18px #0074e410; }
-    .ai-demo p { font-size:1rem; color:#444; margin-bottom:10px;}
-    .input { font-size:1.05rem; padding:10px 18px; border-radius:8px; border:1px solid #bbb; width:60%; }
-    .ai-btn { background:#0074e4; color:#fff; padding:11px 26px; border:none; border-radius:10px; font-size:1rem; cursor:pointer; margin-top:12px;}
-    .ai-btn:hover{background:#005bb5;}
-    a.nav-btn { background:#fff; color:#0074e4; padding:10px 18px; border-radius:10px; text-decoration:none; position:absolute; left:15px; top:18px;}
+    body { font-family: 'Tajawal', Arial, sans-serif; direction: rtl; background: #f6fafd; }
+    .ai-section { max-width: 750px; margin: 40px auto; background: #fff; padding: 28px 22px; border-radius: 11px; box-shadow: 0 3px 18px #0001; text-align: center; }
+    .ai-title { font-size: 2em; color: #246eb7; margin-bottom: 14px;}
+    .ai-desc { font-size: 1.2em; color: #444; margin-bottom: 20px;}
+    .ai-icon { font-size: 64px; color: #00c3a7; margin-bottom: 16px;}
+    .ai-btn { background: #246eb7; color: #fff; padding: 12px 32px; font-size: 1.1em; border-radius: 8px; border: none; cursor: pointer; transition: background .25s;}
+    .ai-btn:hover { background: #009997;}
+    .ai-features { margin-top: 24px; text-align: right; }
+    .ai-features ul { list-style: disc inside; color: #2685e7; }
+    .ai-features li { color: #2c2c2c; margin-bottom: 7px;}
+    .ai-demo { margin-top: 28px; font-size: 1.05em; color: #888;}
+    footer { background: #242b47; color: #fff; text-align: center; padding: 15px 0; margin-top: 40px; }
   </style>
 </head>
 <body>
   <header>
-    <a href="index.html" class="nav-btn back">&#8592; Home</a>
-    <div class="logo">AutoDrop Platform</div>
+    <h1>AutoDrop Platform</h1>
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="products.html">المنتجات</a>
+      <a href="ai-shopping.html">تسوق بالذكاء الاصطناعي</a>
+      <a href="about.html">من نحن</a>
+      <a href="contact.html">تواصل معنا</a>
+    </nav>
   </header>
-  <div class="container">
-    <h
+
+  <section class="ai-section">
+    <div class="ai-icon">🤖</div>
+    <div class="ai-title">تسوق بذكاء مع مساعدنا الذكي</div>
+    <div class="ai-desc">
+      استكشف تجربة تسوق جديدة كليًا!  
+      فقط أخبرنا عن ما تبحث عنه أو ميزانيتك،  
+      وسيقوم الذكاء الاصطناعي باقتراح المنتجات الأنسب لك فورًا.
+    </div>
+    <button class="ai-btn" onclick="alert('الميزة قيد التطوير حالياً. قريبًا يمكنك التسوق مع مساعدنا الذكي!')">ابدأ تجربة التسوق الذكي</button>
+    <div class="ai-features">
+      <h3>مميزات التسوق الذكي:</h3>
+      <ul>
+        <li>اقتراحات منتجات مناسبة لذوقك واحتياجك.</li>
+        <li>بحث أسرع عن العروض والخصومات.</li>
+        <li>أسئلة وأجوبة فورية عبر روبوت المحادثة.</li>
+        <li>دعم لغتين (عربي / إنجليزي) تلقائي.</li>
+      </ul>
+    </div>
+    <div class="ai-demo">
+      <b>مثال:</b> <br>
+      <span style="color:#444;">"أريد هدية إلكترونية لصديق لا تتعدى 30 دولار" &rarr; سيقترح عليك النظام عدة خيارات فورية!</span>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 منصة AutoDrop Platform – جميع الحقوق محفوظة | التسوق الذكي بالذكاء الاصطناعي
+  </footer>
+</body>
+</html>
