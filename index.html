@@ -1,98 +1,70 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>منصة AutoDrop Platform</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="متجر إلكتروني عالمي للدروبشيبينج ودعم المشاريع الصغيرة.">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AutoDrop Platform - الصفحة الرئيسية</title>
   <style>
-    body { font-family: 'Tajawal', Arial, sans-serif; direction: rtl; margin: 0; padding: 0; background: #f9f9f9;}
-    header { background: #242b47; color: #fff; padding: 15px 0; text-align: center;}
-    nav a { color: #fff; text-decoration: none; margin: 0 10px;}
-    nav a:hover { text-decoration: underline;}
-    main { max-width: 900px; margin: 30px auto; background: #fff; padding: 20px; border-radius: 8px;}
-    h1, h2, h3 { color: #242b47;}
-    .ayah { font-size: 1.4em; margin: 18px 0 7px 0; color: #4460df; font-weight: bold;}
-    .ayah-en { font-size: 1.1em; color: #666; margin-bottom: 15px; }
-    .welcome-messages { margin: 30px 0; text-align: center; }
-    .welcome-text { 
-      display: inline-block; 
-      font-size: 1.3em; 
-      padding: 10px 20px; 
-      background: #e5eaf7;
-      color: #242b47; 
-      border-radius: 7px; 
-      min-height: 38px;
-      animation: fadein 2s infinite alternate;
-    }
-    @keyframes fadein {
-      0%   { opacity: 0.3;}
-      100% { opacity: 1;}
-    }
-    footer { background: #242b47; color: #fff; text-align: center; padding: 17px 0; margin-top: 30px;}
-    .copyright { margin-top: 10px; font-size: 1.1em; color: #dadada;}
-    .global { color: #3ac; font-weight: bold;}
+    body { font-family: Tahoma, Arial, sans-serif; background: linear-gradient(120deg, #f7faff 80%, #ecf0ff 100%); margin: 0; padding: 0; color: #222;}
+    nav { background:#0038ff; padding:12px 0; }
+    nav div { max-width:1050px; margin:0 auto; display:flex; justify-content:center; gap:17px; flex-wrap:wrap;}
+    nav a { color:#fff; text-decoration:none; font-weight: bold; transition:.2s;}
+    nav a.active, nav a:hover { text-decoration: underline;}
+    .container { max-width:650px; margin:50px auto 0; background:#fff; border-radius:18px; box-shadow:0 2px 18px #0038ff18; padding:40px 25px 30px;}
+    .main-logo {display:block; margin:0 auto 14px; width:110px;}
+    .main-title {text-align:center; font-size:2.1em; font-weight:bold; color:#0038ff; margin-bottom:18px;}
+    .thanks {text-align:center; font-size:1.24em; color:#444;}
+    .thanks span {display:block; color:#0038ff; font-size:1.18em; margin-top:7px;}
+    .welcome-messages { margin:38px auto 12px; min-height:45px; text-align:center;}
+    .msg-anim { display:inline-block; font-size:1.12em; color:#0038ff; font-weight:bold; transition:.5s;}
+    footer { background:#0038ff; color:#fff; padding:18px 0 10px; margin-top:35px; text-align:center; font-size:15px; border-radius:0 0 12px 12px;}
+    @media (max-width:700px){.container{padding:18px 3px;}.main-title{font-size:1.3em;}}
   </style>
 </head>
 <body>
-  <header>
-    <h1>مرحبًا بك في AutoDrop Platform</h1>
-    <nav>
-      <a href="index.html">الرئيسية</a>
-      <a href="products.html">المنتجات</a>
-      <a href="about.html">من نحن</a>
-      <a href="contact.html">تواصل معنا</a>
-    </nav>
-  </header>
-  <main>
-    <!-- عبارة قرآنية -->
-    <div class="ayah">هَذَا مِن فَضْلِ رَبِّي</div>
-    <div class="ayah-en">This is by the Grace of my Lord</div>
+<nav>
+  <div>
+    <a href="index.html" class="active">الرئيسية</a>
+    <a href="about.html">عن المنصة</a>
+    <a href="products.html">منتجاتنا</a>
+    <a href="faq.html">الأسئلة الشائعة</a>
+    <a href="contact.html">تواصل معنا</a>
+    <a href="terms.html">الشروط والأحكام</a>
+  </div>
+</nav>
 
-    <!-- رسائل ترحيبية متحركة -->
-    <div class="welcome-messages">
-      <span class="welcome-text" id="welcome"></span>
-    </div>
+<div class="container">
+  <img src="autodrop-logo.png" alt="AutoDrop Logo" class="main-logo">
+  <div class="main-title">AutoDrop Platform</div>
+  <div class="thanks">
+    هذا من فضل ربي
+    <span>This is by the grace of my Lord</span>
+  </div>
 
-    <section>
-      <h2>أفضل المنتجات من موردين عالميين</h2>
-      <p>منصة أوتودروب تجمع لك المنتجات الموثوقة من علي إكسبرس وعلي بابا مباشرة!</p>
-      <a href="products.html" class="btn">تصفح المنتجات</a>
-    </section>
-    <section>
-      <h3>لماذا AutoDrop Platform؟</h3>
-      <ul>
-        <li>دعم مشاريع صغيرة</li>
-        <li>شحن دولي سريع</li>
-        <li>دفع آمن 100%</li>
-        <li>خدمة عملاء بالذكاء الاصطناعي</li>
-      </ul>
-    </section>
-  </main>
-  <footer>
-    &copy; 2025 منصة AutoDrop Platform – جميع الحقوق محفوظة.
-    <div class="copyright">
-      جميع الحقوق محفوظة &copy; لموقع AutoDrop Platform.<br>
-      <span class="global">المتجر عالمي ويخدم جميع الدول العربية والأجنبية.</span>
-    </div>
-  </footer>
-  <script>
-    // رسائل ترحيبية متحركة
-    const messages = [
-      "أهلاً وسهلاً بك في عالم التسوق الذكي!",
-      "تسوق بثقة وأمان من أفضل الموردين.",
-      "نخدمك أينما كنت حول العالم.",
-      "استمتع بعروضنا الحصرية وخدماتنا الذكية.",
-      "منصة AutoDrop Platform تدعم نجاح مشاريعك!"
-    ];
-    let msgIndex = 0;
-    function rotateMessages() {
-      document.getElementById('welcome').textContent = messages[msgIndex];
-      msgIndex = (msgIndex + 1) % messages.length;
-      setTimeout(rotateMessages, 2600);
-    }
-    rotateMessages();
-  </script>
+  <div class="welcome-messages">
+    <span class="msg-anim" id="welcomeMsg"></span>
+  </div>
+</div>
+
+<footer>
+  <div>جميع الحقوق محفوظة &copy; 2025 AutoDrop Platform – متجر عالمي لجميع دول العالم</div>
+</footer>
+
+<script>
+  // رسائل ترحيبية متحركة
+  const msgs = [
+    "مرحباً بكم في منصتكم الموثوقة لتسوق عالمي ذكي وآمن!",
+    "ابدأ تجربتك مع منتجات عالية الجودة وخدمة عملاء فريدة.",
+    "دعم كامل لأصحاب المشاريع الصغيرة والتجار.",
+    "شحن سريع وآمن لجميع الدول."
+  ];
+  let i=0;
+  function showMsg(){
+    document.getElementById("welcomeMsg").textContent = msgs[i];
+    i = (i+1) % msgs.length;
+    setTimeout(showMsg, 3000);
+  }
+  showMsg();
+</script>
 </body>
 </html>
