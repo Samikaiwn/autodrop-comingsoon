@@ -26,6 +26,13 @@
       "dest": "/dist/public/$1"
     }
   ],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://autodropplatform.shop/$1",
+      "permanent": true
+    }
+  ],
   "env": {
     "NODE_ENV": "production"
   },
